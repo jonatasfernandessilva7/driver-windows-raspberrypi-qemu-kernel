@@ -1,0 +1,1 @@
+qemu-system-arm -kernel kernel-qemu-5.10.63-bullseye -cpu arm1176 -m 256 -M versatilepb -no-reboot -serial stdio -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" -drive "file=2023-05-03-raspios-bullseye-armhf.img,index=0,media=disk,format=raw" -net nic -net user,hostfwd=tcp::2222-:22
